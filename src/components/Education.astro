@@ -1,11 +1,22 @@
-<section>
-  <h2>Education</h2>
-  <section>
-    <h3>Monash University</h3>
-    <p>Bsc</p>
-  </section>
-  <section>
-    <h3>University of Melbourne</h3>
-    <p>Bsc</p>
-  </section>
+---
+import H2 from "./ui/H2.astro";
+import H3 from "./ui/H3.astro";
+---
+
+<section class="border-b-2 py-4">
+  <H2 text="Education" />
+  <dl>
+    <div class="mb-2">
+      <dt>
+        <H3 text="Master of Information Technology" marginBottom={0} />
+      </dt>
+      <dd>Monash University, 2015 - 2017</dd>
+    </div>
+    <div class="mb-1">
+      <dt>
+        <H3 text="University of Melbourne" marginBottom={0} />
+      </dt>
+      <dd>Bachelor of Science (Software Systems), 2009 - 2013</dd>
+    </div>
+  </dl>
 </section>

@@ -1,0 +1,20 @@
+---
+import H2 from "./ui/H2.astro";
+
+const numYears = new Date().getFullYear() - 2017;
+---
+
+<section class="py-4">
+  <H2 text="About" />
+  <p class="pl-1 mb-1.5">
+    I've been a software developer for around {numYears} years. I got my start at
+    a consultancy working mainly on ETLs and reporting using Microsoft SQL Server
+    for about a year. Since then, I've spent the last {numYears - 1} years building
+    React SPAs at ANZ, IAG and NAB.
+  </p>
+  <p class="pl-1">
+    I'm interested in any challenging roles in both the backend and frontend,
+    that require deep knowledge in React or Typescript. I'm also for keen on
+    learning new languages such as Rust or Go.
+  </p>
+</section>

@@ -1,0 +1,10 @@
+---
+interface Props {
+  text: string;
+  marginBottom?: number;
+}
+
+const { text, marginBottom = 1 } = Astro.props;
+---
+
+<h3 class={`text-lg font-semibold mb-${marginBottom}`}>{text}</h3>

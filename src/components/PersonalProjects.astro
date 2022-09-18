@@ -1,17 +1,30 @@
-<section>
-  <h2>Personal projects</h2>
+---
+import H2 from "./ui/H2.astro";
+import H3 from "./ui/H3.astro";
+import Link from "./ui/Link.astro";
+---
 
-  <ul>
-    <li>Crypto trading bots</li>
-    <p><a href="www.ponzibots.com">wwww.ponzibots.com</a></p>
-    <p><a href="github.com/jithyan/crypto-bots">GitHub repo</a></p>
-    <p>3 apps in a mono repo. UI manager, bot manager and bots</p>
-    <p>Image</p>
+<section class="border-b-2 py-4">
+  <H2 text="Personal projects" />
 
-    <li>Personal blog</li>
-    <p>Collection of articles on stuff I've learnt</p>
+  <section class="mb-4">
+    <H3 text="Crypto trading bots" />
+    <div>
+      <Link text="www.ponzibots.com" href="www.ponzibots.com" />
+      <Link text="GitHub" href="https://github.com/jithyan/crypto-bots" />
+    </div>
+    <p>Under construction...</p>
+  </section>
 
-    <li>Git branch manager</li>
-    <p>simple CLI tool to be able to select branches from a UI</p>
-  </ul>
+  <section>
+    <H3 text="Software development blog" />
+    <div>
+      <Link
+        text="jithyan.github.io/blog"
+        href="https://jithyan.github.io/blog/"
+      />
+      <Link text="GitHub" href="https://github.com/jithyan/blog" />
+    </div>
+    <p>Under construction...</p>
+  </section>
 </section>

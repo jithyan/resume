@@ -1,26 +1,34 @@
-<section>
-  <h2>Tech I'm highly experienced in</h2>
-  <ul>
-    <li>Typescript/Javascript</li>
-    <li>React</li>
-    <li>NodeJS</li>
-  </ul>
-</section>
+---
+import H2 from "./ui/H2.astro";
+import H3 from "./ui/H3.astro";
+---
 
-<section>
-  <h2>Tech I have some experience with</h2>
-  <ul>
-    <li>Python</li>
-    <li>Java</li>
-    <li>Docker</li>
-    <li>Microsoft T-SQL</li>
-  </ul>
-</section>
+<section class="border-b-2 py-4">
+  <H2 text="Technical skills" />
+  <section class="mb-4">
+    <H3 text="Highly experienced in" />
+    <ul class="px-4 list-disc list-inside flex flex-row">
+      <li class="flex-auto">ReactJS</li>
+      <li class="flex-auto">NodeJS</li>
+      <li class="flex-auto">Typescript</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Tech I'm not good at (yet)</h2>
-  <ul>
-    <li>CSS</li>
-    <li>Cloud/DevOps</li>
-  </ul>
+  <section class="mb-4">
+    <H3 text="Some experience with" />
+    <ul class="px-4 list-disc list-inside flex flex-row">
+      <li class="flex-auto">Java 8</li>
+      <li class="flex-auto">Python</li>
+      <li class="flex-auto">Docker</li>
+    </ul>
+  </section>
+
+  <section class="mb-4">
+    <H3 text="Inexperienced in" />
+    <ul class="px-4 list-disc list-inside flex flex-row">
+      <li class="flex-auto">CSS</li>
+      <li class="flex-auto">Cloud</li>
+      <li class="flex-auto">DevOps</li>
+    </ul>
+  </section>
 </section>
