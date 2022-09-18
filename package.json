@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "publish": "rm -rf docs && mkdir docs && touch docs/.nojekyll && yarn build && cp dist/* docs/",
+    "publish": "rm -rf docs && mkdir docs && touch docs/.nojekyll && yarn build && cp -r dist/* docs/",
     "preview": "astro preview",
     "astro": "astro"
   },
