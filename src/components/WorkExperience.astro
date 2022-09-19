@@ -18,27 +18,216 @@ import H3 from "./ui/H3.astro";
   <section class="mb-4">
     <hgroup>
       <H3 text="Insurance Australia Group (IAG) [Perm]" />
-      <h4>Specialist II, Developer</h4>
-      <h5>June 2021 - June 2022</h5>
+      <h4>
+        Specialist II, Developer
+        <span>June 2021 - June 2022</span>
+      </h4>
     </hgroup>
-    <p>Under construction...</p>
+    <section>
+      <h4>Projects</h4>
+
+      <section>
+        <h5>Mid-term amendments</h5>
+        <span>Tech stack:</span>
+        <ul>
+          <li>Typescript</li>
+          <li>React</li>
+          <li>NodeJS</li>
+          <li>Redux</li>
+          <li>Express</li>
+        </ul>
+
+        <ul>
+          <li>Allow customers to amend their motor insurance policies.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Broker removal automation</h5>
+        <span>Tech stack:</span>
+        <ul>
+          <li>Typescript</li>
+          <li>NodeJS</li>
+          <li>MongoDB</li>
+          <li>Docker</li>
+        </ul>
+
+        <ul>
+          <li>
+            When brokers leave an organization, tickets are created in
+            ServiceNow to remove them from the system. This involves deleting
+            them from MongoDB and closing the tickets, which would be quite a
+            time consuming process, given on a bad day, up to 50 brokers could
+            need to be removed.
+          </li>
+          <li>
+            Wrote a script to interact with the ServiceNow APIs to extract
+            broker's ID from the ticket, delete it from our Mongo database and
+            close the ticket. This ran as a nightly job.
+          </li>
+          <li>
+            Resulted in significant cost savings, as my team members no longer
+            needed to service those tickets.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Nova Service Quotes</h5>
+        <span>Tech stack:</span>
+        <ul>
+          <li>Javascript</li>
+          <li>NodeJS</li>
+          <li>Docker</li>
+        </ul>
+
+        <ul>
+          <li>
+            Maintained a legacy NodeJS application for building insurance quotes
+            for the construction industry.
+          </li>
+        </ul>
+      </section>
+    </section>
   </section>
 
   <section class="mb-4">
     <hgroup>
       <H3 text="National Australia Bank (NAB) [Perm]" />
-      <h4>Analyst, Engineer</h4>
-      <h5>Jan 2020 - May 2021</h5>
+      <h4>
+        Analyst, Engineer
+        <span>Jan 2020 - May 2021</span>
+      </h4>
     </hgroup>
-    <p>Under construction...</p>
-  </section>
 
-  <section class="mb-4">
-    <hgroup>
-      <H3 text="CGI [Perm]" />
-      <h4>Associate Developer</h4>
-      <h5>Oct 2017 - Dec 2019</h5>
-    </hgroup>
-    <p>Under construction...</p>
+    <section>
+      <h4>Projects</h4>
+
+      <section>
+        <h5>Business Transaction Accounts</h5>
+        <span>Tech stack:</span>
+        <ul>
+          <li>Typescript</li>
+          <li>React</li>
+          <li>NodeJS</li>
+          <li>Redux + Saga</li>
+          <li>Apollo GraphQL</li>
+        </ul>
+
+        <ul>
+          <li>
+            Allow customers to signup for NAB Business Transaction Accounts.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Self Service Tool</h5>
+        <span>Tech stack:</span>
+        <ul>
+          <li>Typescript</li>
+          <li>React</li>
+        </ul>
+
+        <ul>
+          <li>
+            Self service tool (SST) for internal NAB users to build forms.
+          </li>
+          <li>
+            Refactoring the existing SST code base to take better advantage of
+            Typescript, as well as adding features and bug fixing.
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="mb-4">
+      <hgroup>
+        <H3 text="CGI [Perm]" />
+        <h4>Associate Developer</h4>
+        <h5>Oct 2017 - Dec 2019</h5>
+      </hgroup>
+
+      <p>
+        CGI is a global IT consultancy that delivers a broad range of services.
+      </p>
+
+      <section>
+        <h4>Client Projects</h4>
+
+        <section>
+          <h5>Trade Platform</h5>
+          <span>Client: Australia and New Zealand Bank (ANZ)</span>
+          <span>From: May 2019 - December 2019</span>
+          <span>Tech stack:</span>
+          <ul>
+            <li>Typescript</li>
+            <li>React</li>
+            <li>Redux + Saga</li>
+            <li>Java 8</li>
+            <li>Spring Boot</li>
+          </ul>
+
+          <ul>
+            <li>
+              Built a SPA and BFF for ANZ's Trade Platform for business clients.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h5>Credit Assessment Microservice</h5>
+          <span>Client: Telstra</span>
+          <span>Tech stack:</span>
+          <ul>
+            <li>Java 8</li>
+            <li>Jetty Web Server</li>
+          </ul>
+
+          <ul>
+            <li>
+              Microservice to expose credit assessment's from CGI's proprietary
+              system, to be used for identifying fraud.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h5>NAPLAN Student Reports</h5>
+          <span>Client: Department for Education, South Australia</span>
+          <span>Tech stack:</span>
+          <ul>
+            <li>Microsoft SQL Server 2012 Reporting Services (SSRS)</li>
+            <li>T-SQL</li>
+          </ul>
+
+          <ul>
+            <li>Built reports on student performance on NAPLAN tests.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h5>Working With Children Data Ingestion</h5>
+          <span>Client: Department of Education, Tasmania</span>
+          <span>Tech stack:</span>
+          <ul>
+            <li>Microsoft SQL Server 2012 Integration Services (SSIS)</li>
+            <li>T-SQL</li>
+          </ul>
+
+          <ul>
+            <li>
+              Project to ingest working with children data from the Department
+              of Justice, Tasmania.
+            </li>
+            <li>
+              Developed SSIS ETL packages that extracted data from an external
+              SOAP web service and image files on disk. The data was cleaned and
+              mapped according to customer requirements.
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
   </section>
 </section>
