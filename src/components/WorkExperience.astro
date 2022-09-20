@@ -1,141 +1,144 @@
 ---
 import H2 from "./ui/H2.astro";
 import H3 from "./ui/H3.astro";
+import H4 from "./ui/H4.astro";
+import JobTitle from "./ui/JobTitle.astro";
 import TechStack from "./ui/TechStack.astro";
 ---
 
 <section class="border-b-2 py-4">
   <H2 text="Work experience" />
 
-  <section class="mb-4">
-    <hgroup>
-      <H3 text="National Australia Bank (NAB) [Contractor]" />
-      <h4>Senior React Developer</h4>
-      <h5>July 2022 - Present</h5>
-    </hgroup>
-    <p>Under construction...</p>
-  </section>
+  <div class="pl-2">
+    <section class="border-dotted py-2 border-gray-400 border-b-2 mb-4">
+      <hgroup>
+        <H3 text="National Australia Bank (NAB) [Contractor]" />
+        <JobTitle title="Senior React Developer" date="July 2022 - Present" />
+      </hgroup>
+      <div class="pl-2">
+        <TechStack tech={["Typescript", "React"]} />
+        <p class="pl-2 py-2">
+          Enhancing NAB's internal softphone web app that uses Amazon Connect,
+          to handle complex outbound call campaigns.
+        </p>
+      </div>
+    </section>
 
-  <section class="mb-4">
-    <hgroup>
-      <H3 text="Insurance Australia Group (IAG) [Perm]" />
-      <h4 class="text-md">
-        Specialist II, Developer
-        <span>June 2021 - June 2022</span>
-      </h4>
-    </hgroup>
-    <section>
-      <h4>Projects</h4>
+    <section class="border-dotted py-2 border-gray-400 border-b-2 mb-4">
+      <hgroup>
+        <H3 text="Insurance Australia Group (IAG) [Perm]" />
+        <JobTitle
+          title="Specialist II, Developer"
+          date="June 2021 - June 2022"
+        />
+      </hgroup>
 
-      <section class="my-4">
-        <h5>Mid-term amendments</h5>
-        <div class="px-4">
-          <TechStack
-            tech={["Typescript", "React", "NodeJS", "Redux", "Express"]}
-          />
-          <ul>
-            <li>Allow customers to amend their motor insurance policies.</li>
-          </ul>
+      <section>
+        <div class="text-center mt-4">
+          <H4 text="Projects" />
         </div>
+
+        <section class="pl-2 my-6">
+          <h5 class="text-lg underline">Mid-term amendments</h5>
+          <div class="pb-2 px-4">
+            <TechStack
+              tech={["Typescript", "React", "NodeJS", "Redux", "Express"]}
+            />
+            <ul>
+              <li>Allow customers to amend their motor insurance policies.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="py-2 my-6">
+          <h5 class="text-lg underline mb-2">Broker removal automation</h5>
+          <div class="py-2 px-4">
+            <TechStack tech={["Typescript", "NodeJS", "MongoDB", "Docker"]} />
+            <ul class="list-inside list-disc">
+              <li class="list-item mb-1">
+                When brokers leave an organization, tickets are created in
+                ServiceNow to remove them from the system. This involves
+                deleting them from MongoDB and closing the tickets, which would
+                be quite a time consuming process, given on a bad day, up to 50
+                brokers could need to be removed.
+              </li>
+              <li class="list-item mb-1">
+                Wrote a script to interact with the ServiceNow APIs to extract
+                broker's ID from the ticket, delete it from our Mongo database
+                and close the ticket. This ran as a nightly job.
+              </li>
+              <li class="list-item mb-1">
+                Resulted in significant cost savings, as my team members no
+                longer needed to service those tickets.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="py-2 my-6">
+          <h5 class="text-lg underline mb-2">Nova Service Quotes</h5>
+          <div class="py-2 px-4">
+            <TechStack tech={["Javascript", "NodeJS", "Docker"]} />
+            <ul class="list-inside list-disc">
+              <li class="list-item mb-1">
+                Maintained a legacy NodeJS application for building insurance
+                quotes for the construction industry.
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
+    </section>
 
-      <section class="my-4">
-        <h5>Broker removal automation</h5>
-        <span>Tech stack:</span>
-        <ul>
-          <li>Typescript</li>
-          <li>NodeJS</li>
-          <li>MongoDB</li>
-          <li>Docker</li>
-        </ul>
+    <section class="border-dotted py-2 border-gray-400 border-b-2 mb-4">
+      <hgroup>
+        <H3 text="National Australia Bank (NAB) [Perm]" />
+        <JobTitle title="Analyst, Engineer" date="Jan 2020 - May 2021" />
+      </hgroup>
 
-        <ul>
-          <li>
-            When brokers leave an organization, tickets are created in
-            ServiceNow to remove them from the system. This involves deleting
-            them from MongoDB and closing the tickets, which would be quite a
-            time consuming process, given on a bad day, up to 50 brokers could
-            need to be removed.
-          </li>
-          <li>
-            Wrote a script to interact with the ServiceNow APIs to extract
-            broker's ID from the ticket, delete it from our Mongo database and
-            close the ticket. This ran as a nightly job.
-          </li>
-          <li>
-            Resulted in significant cost savings, as my team members no longer
-            needed to service those tickets.
-          </li>
-        </ul>
-      </section>
+      <section>
+        <h4>Projects</h4>
 
-      <section class="my-4">
-        <h5>Nova Service Quotes</h5>
-        <div class="px-4">
-          <TechStack tech={["Javascript", "NodeJS", "Docker"]} />
+        <section>
+          <h5>Business Transaction Accounts</h5>
+          <TechStack
+            tech={[
+              "Typescript",
+              "React",
+              "NodeJS",
+              "Redux + Saga",
+              "Apollo GraphQL",
+            ]}
+          />
+
           <ul>
             <li>
-              Maintained a legacy NodeJS application for building insurance
-              quotes for the construction industry.
+              Allow customers to signup for NAB Business Transaction Accounts.
             </li>
           </ul>
-        </div>
-      </section>
-    </section>
-  </section>
+        </section>
 
-  <section class="mb-4">
-    <hgroup>
-      <H3 text="National Australia Bank (NAB) [Perm]" />
-      <h4>
-        Analyst, Engineer
-        <span>Jan 2020 - May 2021</span>
-      </h4>
-    </hgroup>
+        <section>
+          <h5>Self Service Tool</h5>
+          <TechStack tech={["Typescript", "React"]} />
 
-    <section>
-      <h4>Projects</h4>
-
-      <section>
-        <h5>Business Transaction Accounts</h5>
-        <TechStack
-          tech={[
-            "Typescript",
-            "React",
-            "NodeJS",
-            "Redux + Saga",
-            "Apollo GraphQL",
-          ]}
-        />
-
-        <ul>
-          <li>
-            Allow customers to signup for NAB Business Transaction Accounts.
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h5>Self Service Tool</h5>
-        <TechStack tech={["Typescript", "React"]} />
-
-        <ul>
-          <li>
-            Self service tool (SST) for internal NAB users to build forms.
-          </li>
-          <li>
-            Refactoring the existing SST code base to take better advantage of
-            Typescript, as well as adding features and bug fixing.
-          </li>
-        </ul>
+          <ul>
+            <li>
+              Self service tool (SST) for internal NAB users to build forms.
+            </li>
+            <li>
+              Refactoring the existing SST code base to take better advantage of
+              Typescript, as well as adding features and bug fixing.
+            </li>
+          </ul>
+        </section>
       </section>
     </section>
 
-    <section class="mb-4">
+    <section class="py-2 mb-4">
       <hgroup>
         <H3 text="CGI [Perm]" />
-        <h4>Associate Developer</h4>
-        <h5>Oct 2017 - Dec 2019</h5>
+        <JobTitle title="Associate Developer" date="Oct 2017 - Dec 2019" />
       </hgroup>
 
       <p>
@@ -220,5 +223,5 @@ import TechStack from "./ui/TechStack.astro";
         </section>
       </section>
     </section>
-  </section>
+  </div>
 </section>
