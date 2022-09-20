@@ -2,6 +2,7 @@
 import H2 from "./ui/H2.astro";
 import H3 from "./ui/H3.astro";
 import Link from "./ui/Link.astro";
+import TechStack from "./ui/TechStack.astro";
 ---
 
 <section class="border-b-2 py-4">
@@ -14,16 +15,9 @@ import Link from "./ui/Link.astro";
       <Link text="GitHub" href="https://github.com/jithyan/crypto-bots" />
     </div>
 
-    <span>Tech stack:</span>
-
-    <ul>
-      <li>Typescript</li>
-      <li>MariaDB</li>
-      <li>Google Cloud</li>
-      <li>NodeJS</li>
-      <li>React</li>
-      <li>Recoil</li>
-    </ul>
+    <TechStack
+      tech={["Typescript", "NodeJS", "React", "MariaDB", "Google Cloud"]}
+    />
 
     <p>
       Built a bot for trading crypto on Binance. This project consisted of 4
@@ -43,13 +37,7 @@ import Link from "./ui/Link.astro";
       <Link text="GitHub" href="https://github.com/jithyan/blog" />
     </div>
 
-    <span>Tech stack:</span>
-
-    <ul>
-      <li>Typescript</li>
-      <li>NextJS</li>
-      <li>React</li>
-    </ul>
+    <TechStack tech={["Typescript", "NextJS", "React"]} />
 
     <p>
       A place to document my learning on web development using React and

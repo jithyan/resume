@@ -1,0 +1,22 @@
+---
+interface Props {
+  tech: string[];
+}
+
+const { tech } = Astro.props;
+---
+
+<ul class="flex flex-row text-sm">
+  {
+    tech.map((t, i) => {
+      const borderRight = `${i === tech.length - 1 ? "" : "border-r-0"}`;
+      return (
+        <li
+          class={`p-1 text-center flex-auto border-solid ${borderRight} border-2 border-stone-400`}
+        >
+          {t}
+        </li>
+      );
+    })
+  }
+</ul>
