@@ -64,8 +64,7 @@ import TechStack from "./ui/TechStack.astro";
             <TechStack tech={["Typescript", "NodeJS", "MongoDB", "Docker"]} />
             <BulletList
               points={[
-                "A lot of production support time was spent on removing expired brokers from IAG's MongoDB database.",
-                "Wrote a script to interact with ServiceNow APIs to extract broker IDs from raised tickets, and purge them from our database. These tickets would then be closed.",
+                "A lot of production support time was spent on removing expired brokers from IAG's database. Was given responsibility to develop a script that interacted with ServiceNow APIs to extract broker IDs from raised tickets, and then purge them from our database, before finally closing those tickets.",
                 "Resulted in significant cost savings, as team members no longer needed to service those tickets.",
               ]}
             />
@@ -73,10 +72,22 @@ import TechStack from "./ui/TechStack.astro";
         </section>
 
         <section class="py-2 my-6">
+          <ProjectTitle projectName="Customer Complaints Form" />
+
+          <div class="py-2 px-4">
+            <TechStack
+              tech={["Typescript", "React", "React Hook Form", "React Query"]}
+            />
+
+            <p>Maintained a form for staff to submit customer complaints.</p>
+          </div>
+        </section>
+
+        <section class="py-2 my-6">
           <ProjectTitle projectName="Nova Service Quotes" />
 
           <div class="py-2 px-4">
-            <TechStack tech={["Javascript", "NodeJS", "Docker"]} />
+            <TechStack tech={["Javascript", "NodeJS"]} />
 
             <p>
               Maintained a legacy NodeJS application for building insurance
