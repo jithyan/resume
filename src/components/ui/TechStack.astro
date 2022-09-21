@@ -1,0 +1,14 @@
+---
+import TechSkillList from "./TechSkillList.astro";
+
+interface Props {
+  tech: string[];
+}
+
+const { tech } = Astro.props;
+---
+
+<section class="mb-3 pb-3">
+  <h5 class="font-semibold text-sm">Tech stack</h5>
+  <TechSkillList tech={tech} />
+</section>

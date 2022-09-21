@@ -1,34 +1,32 @@
 ---
 import H2 from "./ui/H2.astro";
 import H3 from "./ui/H3.astro";
+import TechSkillList from "./ui/TechSkillList.astro";
 ---
 
 <section class="border-b-2 py-4">
-  <H2 text="Technical skills" />
-  <section class="mb-4">
-    <H3 text="Highly experienced in" />
-    <ul class="px-4 list-disc list-inside flex flex-row">
-      <li class="flex-auto">ReactJS</li>
-      <li class="flex-auto">NodeJS</li>
-      <li class="flex-auto">Typescript</li>
-    </ul>
-  </section>
+  <H2 marginBottom={8} text="Technical skills" />
 
-  <section class="mb-4">
-    <H3 text="Some experience with" />
-    <ul class="px-4 list-disc list-inside flex flex-row">
-      <li class="flex-auto">Java 8</li>
-      <li class="flex-auto">Python</li>
-      <li class="flex-auto">Docker</li>
-    </ul>
-  </section>
+  <div class="pl-2 mt-2">
+    <section class="mb-4">
+      <H3 text="Highly experienced in" marginBottom={4} />
+      <div class="px-2 py-2">
+        <TechSkillList tech={["React", "NodeJS", "Typescript"]} />
+      </div>
+    </section>
 
-  <section class="mb-4">
-    <H3 text="Inexperienced in" />
-    <ul class="px-4 list-disc list-inside flex flex-row">
-      <li class="flex-auto">CSS</li>
-      <li class="flex-auto">Cloud</li>
-      <li class="flex-auto">DevOps</li>
-    </ul>
-  </section>
+    <section class="mb-4">
+      <H3 text="Some experience with" marginBottom={4} />
+      <div class="px-2 py-2">
+        <TechSkillList tech={["Java 8", "Python", "Docker"]} />
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <H3 text="Inexperienced in" marginBottom={4} />
+      <div class="px-2 py-2">
+        <TechSkillList tech={["CSS", "Cloud", "DevOps"]} />
+      </div>
+    </section>
+  </div>
 </section>
