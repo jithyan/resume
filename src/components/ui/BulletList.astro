@@ -1,0 +1,11 @@
+---
+interface Props {
+  points: any[];
+}
+
+const { points } = Astro.props;
+---
+
+<ul class="list-inside list-disc">
+  {points.map((p) => <li class="list-item mb-2">{p}</li>)}
+</ul>
