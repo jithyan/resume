@@ -5,57 +5,63 @@ import Link from "./ui/Link.astro";
 import TechStack from "./ui/TechStack.astro";
 ---
 
-<section class="border-b-2 py-4">
+<section class="border-b-2 py-6">
   <H2 text="Personal projects" />
 
-  <section class="mb-4">
-    <H3 text="Crypto trading bots" />
-    <div>
-      <Link text="www.ponzibots.com" href="www.ponzibots.com" />
-      <Link text="GitHub" href="https://github.com/jithyan/crypto-bots" />
-    </div>
+  <div class="pl-2">
+    <section class="mb-4">
+      <H3 text="Crypto trading bots" />
+      <div class="p-1 mb-2 text-sm">
+        <Link text="www.ponzibots.com" href="www.ponzibots.com" />
+        <Link text="GitHub" href="https://github.com/jithyan/crypto-bots" />
+      </div>
 
-    <TechStack
-      tech={["Typescript", "NodeJS", "React", "MariaDB", "Google Cloud"]}
-    />
+      <div class="px-4 py-2">
+        <TechStack
+          tech={["Typescript", "NodeJS", "React", "MariaDB", "Google Cloud"]}
+        />
+        <p>
+          Built bots for trading crypto on Binance. This project consisted of 4
+          major pieces: a UI manager to view the performance of the bots and to
+          start/stop them; the bot itself and 2 microservices - one to manage
+          the bots, the other to log their trades.
+        </p>
+      </div>
+    </section>
 
-    <p>
-      Built a bot for trading crypto on Binance. This project consisted of 4
-      major pieces: a UI manager to view the performance of the bots and
-      start/stop them; the bot itself and 2 microservices - one to manage the
-      bots, the other to log their trades
-    </p>
-  </section>
+    <section class="mb-4">
+      <H3 text="Software development blog" />
+      <div class="p-1 mb-2 text-sm">
+        <Link
+          text="jithyan.github.io/blog"
+          href="https://jithyan.github.io/blog/"
+        />
+        <Link text="GitHub" href="https://github.com/jithyan/blog" />
+      </div>
 
-  <section>
-    <H3 text="Software development blog" />
-    <div>
-      <Link
-        text="jithyan.github.io/blog"
-        href="https://jithyan.github.io/blog/"
-      />
-      <Link text="GitHub" href="https://github.com/jithyan/blog" />
-    </div>
+      <div class="px-4 py-2">
+        <TechStack tech={["Typescript", "NextJS", "React"]} />
+        <p>
+          A place to document my learning on using React and Typescript for web
+          development.
+        </p>
+      </div>
+    </section>
 
-    <TechStack tech={["Typescript", "NextJS", "React"]} />
+    <section class="mb-4">
+      <H3 text="Resume" />
+      <div class="p-1 mb-2 text-sm">
+        <Link
+          text="jithyan.github.io/resume/"
+          href="https://github.com/jithyan/blog"
+        />
+        <Link text="GitHub" href="https://github.com/jithyan/blog" />
+      </div>
 
-    <p>
-      A place to document my learning on using React and Typescript for web
-      development.
-    </p>
-  </section>
-
-  <section>
-    <H3 text="Resume" />
-    <div>
-      <Link
-        text="jithyan.github.io/resume/"
-        href="https://github.com/jithyan/blog"
-      />
-      <Link text="GitHub" href="https://github.com/jithyan/blog" />
-    </div>
-
-    <TechStack tech={["Astro", "HTML", "Tailwind CSS"]} />
-    <p>My resume as a static website.</p>
-  </section>
+      <div class="px-4 py-2">
+        <TechStack tech={["Astro", "HTML", "Tailwind CSS"]} />
+        <p>My resume as a static website.</p>
+      </div>
+    </section>
+  </div>
 </section>
