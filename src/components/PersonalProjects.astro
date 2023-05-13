@@ -49,18 +49,47 @@ import TechStack from "./ui/TechStack.astro";
     </section>
 
     <section class="mb-4">
+      <H3 text="Michael West Reader for Android" />
+      <div class="p-1 mb-2 text-sm">
+        <Link text="GitHub" href="https://github.com/jithyan/michael-west-reader" />
+      </div>
+
+      <div class="px-4 py-2">
+        <TechStack tech={["Typescript", "React Native", "Expo"]} />
+        <p>
+          A mobile specific reader for the Michael West news website. Didn't go through the process of publishing it due to the number of hoops a news app has to go through to publish in Google's Play Store.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <H3 text="Git Branch Manager" />
+      <div class="p-1 mb-2 text-sm">
+        <Link text="GitHub" href="https://github.com/jithyan/git-branch-manager" />
+      </div>
+
+      <div class="px-4 py-2">
+        <TechStack tech={["Typescript", "React", "NodeJS", "Ink"]} />
+        <p>
+          A very simple CLI utility for being able to select branches for checkout/removal, as I couldn't be bothered typing out full branch names.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-4">
       <H3 text="Resume" />
       <div class="p-1 mb-2 text-sm">
         <Link
           text="jithyan.github.io/resume/"
-          href="https://github.com/jithyan/blog"
+          href="https://github.com/jithyan/resume"
         />
-        <Link text="GitHub" href="https://github.com/jithyan/blog" />
+        <Link text="GitHub" href="https://github.com/jithyan/resume" />
       </div>
 
       <div class="px-4 py-2">
-        <TechStack tech={["Astro", "HTML", "Tailwind CSS"]} />
-        <p>My resume as a static website.</p>
+        <TechStack tech={["Astro", "HTML", "Tailwind CSS", "React PDF"]} />
+        <p>My resume as a (mostly) static website using Astro's Islands architecture.
+        The PDF version is generated client side using React PDF.</p>
       </div>
     </section>
   </div>
