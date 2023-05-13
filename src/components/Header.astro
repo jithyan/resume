@@ -1,4 +1,5 @@
 ---
+import { DownloadResumeAsPdf } from "./pdf/PDF";
 import Link from "./ui/Link.astro";
 ---
 
@@ -14,6 +15,7 @@ import Link from "./ui/Link.astro";
       <div class="py-0.5">
         <Link href="https://www.linkedin.com/in/jithyan/" text="LinkedIn" />
         <Link href="https://github.com/jithyan" text="GitHub" />
+        <DownloadResumeAsPdf client:only="react" />
       </div>
     </div>
   </div>
