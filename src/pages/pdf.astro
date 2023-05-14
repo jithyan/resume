@@ -1,0 +1,15 @@
+---
+import MainHead from "../components/MainHead.astro";
+import { Pdf, PdfView } from "../components/pdf/PDF";
+---
+
+<html lang="en">
+    <head>
+        <MainHead title="Jithya's Resume" />
+    </head>
+    <body>
+        <main>
+            <PdfView client:only="react"/>
+        </main>
+    </body>
+</html>
