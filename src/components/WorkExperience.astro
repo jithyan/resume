@@ -8,231 +8,251 @@ import TechStack from "./ui/TechStack.astro";
 ---
 
 <section class="border-b-2 py-4">
-  <H2 text="Work experience" />
+    <H2 text="Work experience" />
 
-  <div class="pl-2">
-    <section class="border-dotted py-2 border-gray-400 border-b-2 mb-4">
-      <hgroup>
-        <H3 text="National Australia Bank (NAB) [Contractor]" />
-        <JobTitle title="Senior React Developer" date="July 2022 - June 24, 2023" />
-      </hgroup>
-      <div class="pl-2">
-        <ProjectTitle projectName="Outbound Campaign" />
+    <div class="pl-2">
+        <section class="border-dotted py-2 border-gray-400 border-b-2 mb-4">
+            <hgroup>
+                <H3 text="National Australia Bank (NAB) [Contractor]" />
+                <JobTitle
+                    title="Senior React Developer"
+                    date="July 2022 - June 24, 2023"
+                />
+            </hgroup>
+            <div class="pl-2">
+                <ProjectTitle projectName="Outbound Campaign" />
 
-        <div class="px-4 py-2">
-          <TechStack tech={["Typescript", "React"]} />
-          <BulletList
-            points={[
-              "Project to integrate Outbound Call Campaign management from another vendor into NAB's customized Amazon Connect Softphone. This would allow NAB's call centre to automatically overdial customers during marketing call campaigns and connect them to their agents when answered.",
-              "Migrated part of the codebase from Javascript to Typescript, and introduced React Testing Library to replace Enzyme for unit testing.",
-              "Introduced the finite state machine pattern for managing the complexity of call interactions."
-            ]}
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="border-dotted py-2 border-gray-400 border-b-2 mb-4">
-      <hgroup>
-        <H3 text="Insurance Australia Group (IAG) [Perm]" />
-        <JobTitle
-          title="Specialist II, Developer"
-          date="June 2021 - June 2022"
-        />
-      </hgroup>
-
-      <div class="mt-4 pl-2">
-        <section class="pl-2 my-6">
-          <ProjectTitle projectName="Mid-term Amendments" />
-
-          <div class="py-2 px-4">
-            <TechStack
-              tech={["Typescript", "React", "NodeJS", "Redux", "Express"]}
-            />
-            <BulletList
-              points={[
-                "Worked with Pivotal Labs to build a SPA that allowed customers to amend their home and motor insurance policies.",
-                "This was an XP team that worked strictly in pairs, using TDD, continuous integration and trunk based development practices.",
-              ]}
-            />
-          </div>
+                <div class="px-4 py-2">
+                    <TechStack tech={["Typescript", "React"]} />
+                    <BulletList
+                        points={[
+                            "Integrated Outbound Call Campaign management into NAB's customized Amazon Connect Softphone.",
+                            "Migrated part of the codebase from Javascript to Typescript, and introduced React Testing Library to replace Enzyme for unit testing.",
+                            "Introduced the finite state machine pattern for managing the complexity of call interactions. A key achievement was no defects being raised with regard to the Outbound feature in the Softphone since deployment to production.",
+                        ]}
+                    />
+                </div>
+            </div>
         </section>
 
-        <section class="pl-2 py-1 my-6">
-          <ProjectTitle projectName="Broker Removal Automation" />
+        <section class="border-dotted py-2 border-gray-400 border-b-2 mb-4">
+            <hgroup>
+                <H3 text="Insurance Australia Group (IAG) [Perm]" />
+                <JobTitle
+                    title="Specialist II, Developer"
+                    date="June 2021 - June 2022"
+                />
+            </hgroup>
 
-          <div class="px-4 py-2">
-            <TechStack tech={["Typescript", "NodeJS", "MongoDB", "Docker"]} />
-            <BulletList
-              points={[
-                "A lot of production support time was spent on removing expired brokers from IAG's database. Was given responsibility to develop a script that interacted with ServiceNow APIs to extract broker IDs from raised tickets, and then purge them from our database, before finally closing those tickets.",
-                "Resulted in significant cost savings, as team members no longer needed to service those tickets.",
-              ]}
+            <div class="mt-4 pl-2">
+                <section class="pl-2 my-6">
+                    <ProjectTitle projectName="Mid-term Amendments" />
+
+                    <div class="py-2 px-4">
+                        <TechStack
+                            tech={[
+                                "Typescript",
+                                "React",
+                                "NodeJS",
+                                "Redux",
+                                "Express",
+                            ]}
+                        />
+                        <BulletList
+                            points={[
+                                "Worked with Pivotal Labs to build a SPA that allowed customers to amend their home and motor insurance policies.",
+                                "This was an XP team that worked strictly in pairs, using TDD, continuous integration and trunk based development practices.",
+                            ]}
+                        />
+                    </div>
+                </section>
+
+                <section class="pl-2 py-1 my-6">
+                    <ProjectTitle projectName="Broker Removal Automation" />
+
+                    <div class="px-4 py-2">
+                        <TechStack
+                            tech={["Typescript", "NodeJS", "MongoDB", "Docker"]}
+                        />
+                        <BulletList
+                            points={[
+                                "A lot of production support time was spent on removing expired brokers from IAG's database. Was given responsibility to develop a script that interacted with ServiceNow APIs to extract broker IDs from raised tickets, and then purge them from our database, before finally closing those tickets.",
+                                "Resulted in significant cost savings, as team members no longer needed to service those tickets.",
+                            ]}
+                        />
+                    </div>
+                </section>
+
+                <section class="py-2 my-6">
+                    <ProjectTitle projectName="Customer Complaints Form" />
+
+                    <div class="py-2 px-4">
+                        <TechStack
+                            tech={[
+                                "Typescript",
+                                "React",
+                                "React Hook Form",
+                                "React Query",
+                            ]}
+                        />
+
+                        <p>
+                            Maintained a form for staff to submit customer
+                            complaints.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="py-2 my-6">
+                    <ProjectTitle projectName="Nova Service Quotes" />
+
+                    <div class="py-2 px-4">
+                        <TechStack tech={["Javascript", "NodeJS"]} />
+
+                        <p>
+                            Maintained a legacy NodeJS application for building
+                            insurance quotes for the construction industry.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <section class="border-dotted py-4 border-gray-400 border-b-2 mb-4">
+        <hgroup class="mb-6">
+            <H3 text="National Australia Bank (NAB) [Perm]" />
+            <JobTitle title="Analyst, Engineer" date="Jan 2020 - May 2021" />
+        </hgroup>
+
+        <section class="pl-2">
+            <ProjectTitle projectName="Business Transaction Accounts" />
+            <div class="py-2 px-4">
+                <TechStack
+                    tech={[
+                        "Typescript",
+                        "React",
+                        "NodeJS",
+                        "Redux + Saga",
+                        "Apollo GraphQL",
+                    ]}
+                />
+                <BulletList
+                    points={[
+                        "Built several forms as micro-frontends that allowed customers to signup for NAB's Business Transaction Accounts.",
+                        "Built and maintained a React Storybook component library, so that our team and others could share common form components",
+                        "Won two consecutive quarterly NAB Recognize awards in my first year.",
+                    ]}
+                />
+            </div>
+        </section>
+
+        <section class="mt-6 pl-2">
+            <ProjectTitle projectName="Self Service Tool (SST)" />
+
+            <div class="py-2 px-4">
+                <TechStack tech={["Typescript", "React"]} />
+                <BulletList
+                    points={[
+                        "SST was a tool to help internal NAB users to build their own forms.",
+                        "Our team developed a SPA to search, edit and manage these user forms.",
+                        "My contribution was to refactor the existing SST code base to take better advantage of Typescript, as well as added features and fixed defects.",
+                    ]}
+                />
+            </div>
+        </section>
+    </section>
+
+    <section class="py-4 mb-4">
+        <hgroup>
+            <H3 text="CGI [Perm]" />
+            <JobTitle title="Associate Developer" date="Oct 2017 - Dec 2019" />
+        </hgroup>
+
+        <p class="pl-2 mb-6">
+            CGI is a global IT consultancy that delivers a broad range of
+            services.
+        </p>
+
+        <section class="pl-2">
+            <ProjectTitle projectName="Trade Platform" client="ANZ Bank" />
+
+            <div class="py-2 px-4">
+                <TechStack
+                    tech={[
+                        "Typescript",
+                        "React",
+                        "Redux + Saga",
+                        "Java 8",
+                        "Spring Boot",
+                    ]}
+                />
+
+                <p class="mb-6">
+                    Greenfield project, where I helped build a React SPA and a
+                    Java Spring Boot BFF for ANZ's Trade Platform.
+                </p>
+            </div>
+        </section>
+
+        <section class="pl-2 mb-6">
+            <ProjectTitle
+                projectName="Credit Assessment Microservice"
+                client="Telstra"
             />
-          </div>
+
+            <div class="py-2 px-4">
+                <TechStack tech={["Java 8", "Jetty Web Server"]} />
+                <p>
+                    Built a Java Microservice to expose credit assessments from
+                    CGI's proprietary credit decision engine system, to be used
+                    for identifying fraud.
+                </p>
+            </div>
         </section>
 
-        <section class="py-2 my-6">
-          <ProjectTitle projectName="Customer Complaints Form" />
-
-          <div class="py-2 px-4">
-            <TechStack
-              tech={["Typescript", "React", "React Hook Form", "React Query"]}
+        <section class="pl-2 my-2">
+            <ProjectTitle
+                projectName="NAPLAN Student Reports"
+                client="Department for Education, South Australia"
             />
 
-            <p>Maintained a form for staff to submit customer complaints.</p>
-          </div>
+            <div class="py-2 px-4">
+                <TechStack
+                    tech={[
+                        "Microsoft SQL Server 2012 Reporting Services (SSRS)",
+                        "T-SQL",
+                    ]}
+                />
+
+                <p class="mb-6">
+                    Built SSRS reports that required complex T-SQL queries
+                    (outer joins, window functions and pivots), to analyze
+                    student performance on NAPLAN tests.
+                </p>
+            </div>
         </section>
 
-        <section class="py-2 my-6">
-          <ProjectTitle projectName="Nova Service Quotes" />
+        <section class="mt-2 pl-2">
+            <ProjectTitle
+                projectName="Working With Children Data Ingestion"
+                client="Department of Education, Tasmania"
+            />
 
-          <div class="py-2 px-4">
-            <TechStack tech={["Javascript", "NodeJS"]} />
+            <div class="pt-2 px-4">
+                <TechStack
+                    tech={[
+                        "Microsoft SQL Server 2012 Integration Services (SSIS)",
+                        "T-SQL",
+                    ]}
+                />
 
-            <p>
-              Maintained a legacy NodeJS application for building insurance
-              quotes for the construction industry.
-            </p>
-          </div>
+                <p>
+                    Developed SSIS ETL packages that extracted data from an
+                    external SOAP web service and image files on disk. The data
+                    was cleaned and mapped according to customer requirements.
+                </p>
+            </div>
         </section>
-      </div>
     </section>
-  </div>
-
-  <section class="border-dotted py-4 border-gray-400 border-b-2 mb-4">
-    <hgroup class="mb-6">
-      <H3 text="National Australia Bank (NAB) [Perm]" />
-      <JobTitle title="Analyst, Engineer" date="Jan 2020 - May 2021" />
-    </hgroup>
-
-    <section class="pl-2">
-      <ProjectTitle projectName="Business Transaction Accounts" />
-      <div class="py-2 px-4">
-        <TechStack
-          tech={[
-            "Typescript",
-            "React",
-            "NodeJS",
-            "Redux + Saga",
-            "Apollo GraphQL",
-          ]}
-        />
-        <BulletList
-          points={[
-            "Built several forms as micro-frontends that allowed customers to signup for NAB's Business Transaction Accounts.",
-            "Built and maintained a React Storybook component library, so that our team and others could share common form components",
-            "Won two consecutive quarterly NAB Recognize awards in my first year.",
-          ]}
-        />
-      </div>
-    </section>
-
-    <section class="mt-6 pl-2">
-      <ProjectTitle projectName="Self Service Tool (SST)" />
-
-      <div class="py-2 px-4">
-        <TechStack tech={["Typescript", "React"]} />
-        <BulletList
-          points={[
-            "SST was a tool to help internal NAB users to build their own forms.",
-            "Our team developed a SPA to search, edit and manage these user forms.",
-            "My contribution was to refactor the existing SST code base to take better advantage of Typescript, as well as added features and fixed defects.",
-          ]}
-        />
-      </div>
-    </section>
-  </section>
-
-  <section class="py-4 mb-4">
-    <hgroup>
-      <H3 text="CGI [Perm]" />
-      <JobTitle title="Associate Developer" date="Oct 2017 - Dec 2019" />
-    </hgroup>
-
-    <p class="pl-2 mb-6">
-      CGI is a global IT consultancy that delivers a broad range of services.
-    </p>
-
-    <section class="pl-2">
-      <ProjectTitle projectName="Trade Platform" client="ANZ Bank" />
-
-      <div class="py-2 px-4">
-        <TechStack
-          tech={[
-            "Typescript",
-            "React",
-            "Redux + Saga",
-            "Java 8",
-            "Spring Boot",
-          ]}
-        />
-
-        <p class="mb-6">
-          Greenfield project, where I helped build a React SPA and a Java Spring
-          Boot BFF for ANZ's Trade Platform.
-        </p>
-      </div>
-    </section>
-
-    <section class="pl-2 mb-6">
-      <ProjectTitle
-        projectName="Credit Assessment Microservice"
-        client="Telstra"
-      />
-
-      <div class="py-2 px-4">
-        <TechStack tech={["Java 8", "Jetty Web Server"]} />
-        <p>
-          Built a Java Microservice to expose credit assessments from CGI's
-          proprietary credit decision engine system, to be used for identifying
-          fraud.
-        </p>
-      </div>
-    </section>
-
-    <section class="pl-2 my-2">
-      <ProjectTitle
-        projectName="NAPLAN Student Reports"
-        client="Department for Education, South Australia"
-      />
-
-      <div class="py-2 px-4">
-        <TechStack
-          tech={[
-            "Microsoft SQL Server 2012 Reporting Services (SSRS)",
-            "T-SQL",
-          ]}
-        />
-
-        <p class="mb-6">
-          Built SSRS reports that required complex T-SQL queries (outer joins,
-          window functions and pivots), to analyze student performance on NAPLAN
-          tests.
-        </p>
-      </div>
-    </section>
-
-    <section class="mt-2 pl-2">
-      <ProjectTitle
-        projectName="Working With Children Data Ingestion"
-        client="Department of Education, Tasmania"
-      />
-
-      <div class="pt-2 px-4">
-        <TechStack
-          tech={[
-            "Microsoft SQL Server 2012 Integration Services (SSIS)",
-            "T-SQL",
-          ]}
-        />
-
-        <p>
-          Developed SSIS ETL packages that extracted data from an external SOAP
-          web service and image files on disk. The data was cleaned and mapped
-          according to customer requirements.
-        </p>
-      </div>
-    </section>
-  </section>
 </section>
