@@ -100,7 +100,7 @@ export const HeaderPdf = ({ classNames = [] }: { classNames?: string[] }) => (
     <View style={tw(["mb-8", ...classNames].join(" "))}>
         <Text style={tw("text-6xl font-extrabold mb-4")}>Jithya N</Text>
         <Text style={tw("text-sm mb-4")}>
-            Full-stack developer | Melbourne, Australia
+            Full-stack developer | Melbourne, Australia | jn.sub@outlook.com
         </Text>
         <View style={tw("flex flex-row")}>
             <PdfLink classNames={["pr-2"]}>
@@ -133,11 +133,20 @@ export const EducationPdf = ({
 }: {
     classNames?: string[];
 }) => (
-    <View style={tw("mb-4")}>
+    <View style={tw("mb-2")}>
         <PdfHeading heading="Education" />
 
-        <View style={tw(["text-sm leading-normal", ...classNames].join(" "))}>
-            <View style={tw("pb-4")}>
+        <View
+            style={tw(
+                [
+                    "text-sm leading-normal",
+                    "flex",
+                    "flex-row",
+                    ...classNames,
+                ].join(" ")
+            )}
+        >
+            <View style={tw("pb-4 mr-2")}>
                 <BulletPoint>
                     <Text style={tw("ml-1")}>
                         Master of Information Technology
@@ -207,7 +216,7 @@ export const TechnicalSkillsPdf = ({
 );
 
 export const PdfPage = ({ children }: PropsWithChildren<{}>) => (
-    <Page size="A4" style={tw("flex flex-col py-8 px-8")}>
+    <Page size="A4" style={tw("flex flex-col py-4 px-8")}>
         {children}
     </Page>
 );
@@ -220,7 +229,7 @@ export const Pdf = () => (
         language="English"
     >
         <PdfPage>
-            <View style={tw("mb-4")}>
+            <View style={tw("mb-2")}>
                 <Text style={tw("text-xs text-center")}>
                     This resume was generated from:{" "}
                     <PdfLink classNames={["pr-2"]}>
@@ -234,7 +243,7 @@ export const Pdf = () => (
             <TechnicalSkillsPdf classNames={["mb-4"]} />
             <View style={tw("")}>
                 <PdfHeading heading="Work Experience" />
-                <View style={tw("text-sm mb-4")}>
+                <View style={tw("text-sm mb-2")}>
                     <CompanySummary
                         companyName="National Australia Bank (NAB)"
                         duration="July 2022 - June 24, 2023"
@@ -243,11 +252,11 @@ export const Pdf = () => (
                     />
                     <ProjectSummary
                         description={[
-                            "Integrating Outbound Call Campaign management into NAB's customized Amazon Connect Softphone. This would allow NAB's call centre to automatically overdial customers during marketing call campaigns and connect them to their agents when answered.",
+                            "Integrated Outbound Call Campaign management into NAB's customized Amazon Connect Softphone.",
                             "Migrated part of the codebase from Javascript to Typescript, and introduced React Testing Library to replace Enzyme for unit testing.",
-                            "Introduced the finite state machine pattern for managing the complexity of call interactions.",
+                            "Introduced the finite state machine pattern for managing the complexity of call interactions. A key achievement was no defects being raised with regard to the Outbound feature in the Softphone since deployment to production.",
                         ]}
-                        projectName="Outbound"
+                        projectName="Outbound Dialler"
                         techStack={["React", "Typescript"]}
                     />
                 </View>
@@ -272,19 +281,24 @@ export const Pdf = () => (
                             "Express",
                         ]}
                     />
+                    <ProjectSummary
+                        projectName="Broker Removal Automation"
+                        description={[
+                            "A lot of production support time was spent on removing expired brokers from IAG's database. Developed a script that used ServiceNow APIs to extract broker IDs from raised tickets, purge them from our database, and then close the tickets.",
+                            "Resulted in significant cost savings, as team members no longer needed to service those tickets.",
+                        ]}
+                        techStack={[
+                            "Typescript",
+                            "NodeJS",
+                            "MongoDB",
+                            "Docker",
+                        ]}
+                    />
                 </View>
             </View>
         </PdfPage>
         <PdfPage>
             <View style={tw("text-sm mb-4")}>
-                <ProjectSummary
-                    projectName="Broker Removal Automation"
-                    description={[
-                        "A lot of production support time was spent on removing expired brokers from IAG's database. Developed a script that interacted with ServiceNow APIs to extract broker IDs from raised tickets, and then purge them from our database, before finally closing those tickets.",
-                        "Resulted in significant cost savings, as team members no longer needed to service those tickets.",
-                    ]}
-                    techStack={["Typescript", "NodeJS", "MongoDB", "Docker"]}
-                />
                 <ProjectSummary
                     projectName="Customer Complaints Form"
                     description={
@@ -351,10 +365,23 @@ export const Pdf = () => (
                     title="Associate Developer"
                     type="Perm"
                 />
-                <Text>
-                    CGI is a global IT consultancy that delivers a broad range
-                    of services. For a complete list of projects I worked on at
-                    CGI, please view my resume at{" "}
+                <ProjectSummary
+                    projectName="ANZ Trade Platform"
+                    description={[
+                        "CGI is a global IT consultancy which delivers a broad range of services. This was a greenfield project for ANZ's Trade Platform.",
+                        "Built a React SPA and a Java Spring Boot BFF.",
+                    ]}
+                    techStack={[
+                        "Typescript",
+                        "React",
+                        "Redux + Saga",
+                        "Java 8",
+                        "Spring Boot",
+                    ]}
+                />
+                <Text style={tw("bg-gray-400 text-center p-1")}>
+                    For a complete list of projects I worked on at CGI, please
+                    view my resume at{" "}
                     <PdfLink classNames={[]}>jithyan.github.io/resume/</PdfLink>
                 </Text>
             </View>
