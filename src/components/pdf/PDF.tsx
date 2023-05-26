@@ -200,7 +200,7 @@ export const TechnicalSkillsPdf = ({
                 </BulletPoint>
             </View>
             <View style={tw("flex flex-col basis-1/3")}>
-                <Text style={tw("")}>Inexperienced in:</Text>
+                <Text style={tw("")}>Looking to upskill in:</Text>
                 <BulletPoint>
                     <Text>CSS</Text>
                 </BulletPoint>
