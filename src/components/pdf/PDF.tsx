@@ -246,7 +246,7 @@ export const Pdf = () => (
                 <View style={tw("text-sm mb-2")}>
                     <CompanySummary
                         companyName="National Australia Bank (NAB)"
-                        duration="July 2022 - June 24, 2023"
+                        duration="July 2022 - June 30, 2023"
                         title="Senior React Developer"
                         type="Contract"
                     />
