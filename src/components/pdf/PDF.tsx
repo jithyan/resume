@@ -100,7 +100,8 @@ export const HeaderPdf = ({ classNames = [] }: { classNames?: string[] }) => (
     <View style={tw(["mb-8", ...classNames].join(" "))}>
         <Text style={tw("text-6xl font-extrabold mb-4")}>Jithya N</Text>
         <Text style={tw("text-sm mb-4")}>
-            Full-stack developer | Melbourne, Australia | jn.sub@outlook.com
+            Full-stack developer | Box Hill, Australia | jn.sub@outlook.com |
+            +61451033789
         </Text>
         <View style={tw("flex flex-row")}>
             <PdfLink classNames={["pr-2"]}>
