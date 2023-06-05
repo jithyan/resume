@@ -98,7 +98,9 @@ export const PdfLink = ({
 
 export const HeaderPdf = ({ classNames = [] }: { classNames?: string[] }) => (
     <View style={tw(["mb-8", ...classNames].join(" "))}>
-        <Text style={tw("text-6xl font-extrabold mb-4")}>Jithya N</Text>
+        <Text style={tw("text-6xl font-extrabold mb-4")}>
+            Jithya Nanayakkara
+        </Text>
         <Text style={tw("text-sm mb-4")}>
             Full-stack developer | Box Hill, Australia | jn.sub@outlook.com |
             +61451033789
@@ -224,7 +226,7 @@ export const PdfPage = ({ children }: PropsWithChildren<{}>) => (
 
 export const Pdf = () => (
     <Document
-        title="Resume of Jithya N"
+        title="Resume of Jithya Nanayakkara"
         author="Jithya N"
         subject="resume"
         language="English"
